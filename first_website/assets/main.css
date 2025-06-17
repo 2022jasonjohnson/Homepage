@@ -1,0 +1,100 @@
+    @font-face {
+        font-family: 'Cassia';
+        src: url('cassia.woff2')
+        format('woff2'),
+        url('cassia.woff') 
+        format('woff');
+        font-weight: normal;
+        font-style: normal;
+        
+        }
+        
+        body {
+            background-color:rgb(255, 244, 231,.5);
+            font-family: 'Cassia',serif;
+        }
+        p {
+            background-color: cadetblue;
+            padding: 10px;
+            margin: 30px;
+
+            border: 5px groove rgb(24, 85, 24)
+        }
+
+        h1 {
+            color: red;
+        }
+         strong {
+        color: olive;
+        text-decoration:underline;
+        
+        }
+
+        h2 {
+
+            font-family: 'Barlow Condensed', sans-serif;
+        }
+        /* This is a comment! */
+        img {
+            width:100%;
+        }
+
+        #special {
+            background-color: crimson;
+            font-family: 'Bellota Text',sans-serif;
+            font-style: italic;
+            font-weight: bold;
+        }
+        
+        /* stylesheet specificity 
+        external < imbedded < inline
+
+        */
+
+        header {
+            margin:20px;
+            padding: 10px;
+            width:300px;
+            text-align:center;
+
+            background-color: lightblue;
+        }
+        /*Identifier Specificity
+        tag < class < id
+        */
+        main {
+            margin:20px;
+            padding: 10px;
+            width:300px;
+            text-align:center;
+
+            Background-color:lightgray;
+
+        }
+        
+        .class {
+
+            background-color:lightsalmon;
+
+          }
+          #id{
+            background-color:cornflowerblue;
+
+            /*
+            Location Specificity
+            higher < lower
+            */
+          }
+        footer {
+            margin:20px;
+            padding: 10px;
+            width:300px;
+            text-align:center;
+
+            background-color:bisque;
+
+        }
+
+        footer {
+            background-color:darkolivegreen;
+        }

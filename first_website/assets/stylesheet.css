@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Cassia';
+    src: url('cassia.woff2')
+    format(woff2)
+    url('cassia.woff') format('woff')
+
+}
