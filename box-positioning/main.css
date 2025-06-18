@@ -1,0 +1,159 @@
+img {
+    max-width: 100%;
+}
+
+body {
+    margin-top:150px;
+}
+
+.content-box {
+    background-color: lightgray;
+    width:200px;
+    height: 200px;
+    padding:50px;
+    border:10px solid red;
+    margin:50px;
+}
+
+.border-box {
+    background-color: lightgray;
+    width:200px;
+    height: 200px;
+    padding:50px;
+    border:10px solid red;
+    margin:50px;
+
+    box-sizing:border-box
+}
+
+.block {
+    background-color:lightblue;
+    padding: 10px;
+}
+
+.inline {
+    background-color:lightpink;
+}
+
+.inline-block {
+    background-color: lightsteelblue;
+    width:100px;
+    height:100px;
+    margin:10px;
+    display:inline-block;
+}
+
+.square {
+    background-color: rgb(150, 182, 150);
+    width: 100px;
+    height:100px;
+    border:1px solid darkgreen;
+    margin:20px;
+}
+
+.relative {
+    background-color: red;
+    position:relative;
+    top:-30px;
+    left:-30px;
+/* top and left are inverted. use negative numbers */
+
+}
+
+.fixed {
+    background-color: lightpink;
+    position:fixed;
+    bottom:0;
+    right:0;
+
+    margin:0;
+
+    z-index: 1;
+}
+
+.absolute {
+    background-color: khaki;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+}
+
+.container {
+    background-color:gray;
+    border:5px solid black;
+    width:300px;
+    height:300px;
+    margin:20px;
+    /* add position (NOT STATIC) to make sure your
+     child position is in your container*/
+    
+    position:relative;
+}
+
+.contained-absolute {
+    background-color: lightblue;
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:0;
+    right:-100px;
+}
+
+.sticky {
+    background-color: violet;
+    position:sticky;
+    top:0;
+}
+
+.smiley {
+    background-color: yellow;
+    border: 1px rgb(255, 208, 0);
+    width: 200px;
+    height: 200px;
+    position: relative;
+
+    border-radius: 150px;
+}
+
+.eye {
+    background-color: purple;
+    border: 1px solid darkblue;
+    width:40px;
+    height:40px;
+    position:absolute;
+
+    border-radius: 50%;
+}
+
+.left {
+    top:30px;
+    left:30px;
+}
+
+.right {
+    top:30px;
+    right:30px;
+}
+
+.nose {
+    background-color: orange;
+    width: 40px;
+    height:70px;
+    left:50%;
+    transform:translateX(-50%);
+    top:60px;
+    position:absolute;
+}
+
+.mouth {
+    background-color: purple;
+    width: 100px;
+    height: 25px;
+    border: 1px solid darkblue;
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+
+    border-radius: 50%;
+}
