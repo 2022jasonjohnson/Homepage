@@ -17,11 +17,11 @@ img {
     max-width: 60%;
     margin:0 auto;
 }
-
-@media screen and (min-width:900px) {
+/* max with = desktop-first design */
+@media screen and (max-width:900px) {
    
     body {
-        background:lightgoldenrodyellow;
+        background:lightgreen;
     }
 
     .flexible {
@@ -31,10 +31,10 @@ img {
 
 }
 
-@media screen and (min-width:600px) {
+@media screen and (max-width:600px) {
 
     body{
-        background:lightgreen;
+        background:lightgoldenrodyellow;
 
     }
 

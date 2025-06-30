@@ -1,3 +1,119 @@
 body{
-    background-color: orange
+    background-color: white;
+
 }
+
+p {
+    font-family: "Audiowide", sans-serif;
+    font-size:large;
+    padding: 10px;  
+}
+
+.square{
+    max-width:100%;
+    height:250px;
+    margin:20px;
+    background: gray;
+    position: fixed;
+    bottom:12px;
+    left: 0px;margin-left: 0px;width: 1200px;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.items{
+    width:150px;
+    max-width: 90%;
+    margin:10px;
+    background-color: lightpink;
+    border: solid 1px;
+    border-radius: 5%;
+    gap: 10px;
+    display:inline-block;
+}
+
+
+.rus {
+  color: orange;
+  font-family: "Audiowide", sans-serif;
+  padding:10px;
+  width: 100%;
+  height:100px;
+  font-weight: 900;
+  font-size: 90px;
+  margin:0px;
+  
+animation: hovers 2s  infinite alternate ease-in-out;
+animation-delay: 3s;
+
+}
+
+footer {
+  bottom: 0;
+  font-family: "Audiowide", sans-serif;
+  font-size: small;
+  bottom:10px;
+  position: fixed;
+}
+
+@keyframes hovers {
+  0% {
+    transform: translateY(0vw);
+  }
+  100% {
+    transform: translateY(1vw);
+  }
+
+}
+
+@media screen and (max-width:900px) {
+   
+    body {
+        background:lightgreen;
+    }
+
+    .square {
+      max-width: 80%;
+    }
+
+    .items {
+      width:auto;
+    }
+
+    .rus {
+      font-size: 50px;
+    }
+
+    footer {
+      font-size:x-small;
+    }
+  }
+
+@media screen and (max-width:600px) {
+   
+    body {
+        background:lightgoldenrodyellow;
+    }
+    
+     .square {
+      max-width: 80%;
+    }
+
+    .rus {
+      font-size: 40px;
+    }
+    
+    .items {
+      font-size: medium;
+    }
+
+    footer {
+      font-size:xx-small;
+      margin-right: 80px;
+    }
+    
+  }
