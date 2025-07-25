@@ -2,23 +2,11 @@
     box-sizing:border-box;
 }
 
-body {
-    bacgkround: lightcyan;
-}
-
 img {
     max-width: 100%;
 }
 
-
-.flexible {
-    background: lavender;
-    padding: 10px;
-    max-width: 60%;
-    margin:0 auto;
-}
-
-@media screen and (min-width:900px) {
+@media screen and (max-width:900px) {
    
     body {
         background:lightgoldenrodyellow;
@@ -31,7 +19,7 @@ img {
 
 }
 
-@media screen and (min-width:600px) {
+@media screen and (max-width:600px) {
 
     body{
         background:lightgreen;

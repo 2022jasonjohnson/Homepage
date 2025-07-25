@@ -1,0 +1,143 @@
+*{
+    box-sizing:border-box;
+}
+
+
+
+img {
+    max-width: 100%;
+}
+
+.logo{
+    position:fixed;
+    height:200px;
+    width:200px;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    animation: fadeinlogo 4s linear ;
+    transition: height .2s ease-out,
+                width .2s ease-out;
+                
+   }
+
+.logo:hover{
+    height:225px;
+    width:225px;
+}
+
+@keyframes fadeinlogo {
+
+0%{
+opacity: 0;
+}
+75%{
+opacity: 100%;
+}
+100%{
+}
+}
+
+.circle{
+    position:fixed;
+    height:300px;
+    width:300px;
+    left: 50%;
+    bottom: 50%;
+    border: solid white 10px;
+    border-radius: 60%;
+    transform: translate(-50%, 50%);
+
+    animation: fadeinc 4s linear ;
+
+}
+
+
+
+@keyframes fadeinc {
+0%{
+opacity: 0;
+}
+75%{
+opacity: 100%;
+}
+100%{
+}
+}
+
+.circle-skew{
+    position:fixed;
+    height:300px;
+    width:300px;
+    left: 50%;
+    bottom: 50%;
+    border: solid white 6px;
+    border-radius: 60%;
+    transform: translate(-50%, 50%) skew(-0.7rad);
+    
+    animation: fadein 12s ease-out ;
+
+}
+
+@keyframes fadein {
+
+0%{
+    opacity: 0;
+    transform:skew(0) translate(-50%, 50%);
+    border: solid white 10px;
+    
+}
+25%{
+    opacity: 100%;
+    transform:skew(0) translate(-50%, 50%);
+}
+95%{
+    transform:skew(0) translate(-50%, 50%);
+    
+}
+100%{
+    transform: translate(-50%, 50%) skew(-0.7rad);
+}
+}
+
+.startup {
+    background:rgb(51, 126, 255);
+    position: fixed;
+    height:100vh;
+    width:100vw;
+    margin-top: 0px;
+    top: 0px;
+    left: 0px;
+    
+}
+
+
+
+
+.flexible {
+    padding: 10px;
+    max-width: 60%;
+    margin:0 auto;
+}
+
+
+@media screen and (max-width:900px) {
+   
+
+
+    .flexible {
+        border:1px solid;
+        max-width:80%;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+
+
+    .flexible {
+        max-width:100%;
+    }
+}
+
